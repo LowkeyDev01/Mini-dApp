@@ -78,6 +78,7 @@ faqItems.forEach(Items => {
         }
         else{
             answers.style.display = 'flex';
+            toggleBtn.src = 'minus-3108.png'
         }
     })
 })
