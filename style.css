@@ -315,9 +315,6 @@
 
 
 @media (max-width: 700px){
-    .talk{
-        height: 60vh;
-    }
     #one{
         font-size: 60px;
     }
