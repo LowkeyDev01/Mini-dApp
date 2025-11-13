@@ -11,7 +11,11 @@ async function connectWallet(){
     provider = new ethers.BrowserProvider(window.ethereum);
     const account = await provider.send('eth_requestAccounts', []);
     const acc = await account[0];
-    console.log(acc)
+    const accshort = acc.substring(0, 8) + '....' + acc.slice(-4)
+    console.log(acc);
+    document.querySelector('.connect-walletbtn').style.display = 'none'
+    document.querySelector('.status').style.display = 'flex'
+    document.querySelector('.acc').textContent = 'Connected';
 }
 async function loadNFT(){
     for(let tokenId = 1200; tokenId <= 1231; tokenId++){
